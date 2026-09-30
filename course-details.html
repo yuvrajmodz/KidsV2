@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title id="page-title">Course Details — Coding Kids by TIMS Institute</title>
+  <meta name="description" content="Detailed course information for Coding Kids programs by TIMS Institute." />
+  <link rel="icon" type="image/png" href="assets/images/icon.png" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <div class="navbar-inner">
+          <a href="index.html" class="navbar-logo"><img src="assets/images/TimsLogo.png" alt="TIMS Institute" /></a>
+          <ul class="navbar-nav" role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="courses.html" class="active">Courses</a></li>
+            <li><a href="scholarship.html">Scholarship</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+          <div class="navbar-actions">
+            <a href="apply.html" class="btn btn-primary">Apply Now</a>
+            <button class="hamburger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="mobile-menu-panel">
+        <nav class="mobile-menu-nav">
+          <a href="index.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>Home</a>
+          <a href="courses.html" class="active"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><polyline points="8 21 12 17 16 21"/></svg>Courses</a>
+          <a href="scholarship.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>Scholarship</a>
+          <a href="about.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>About</a>
+          <a href="faq.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>FAQ</a>
+          <a href="contact.html"><svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.56 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Contact</a>
+        </nav>
+        <a href="apply.html" class="btn btn-primary btn-full">Apply Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="course-details-hero" id="course-hero" aria-labelledby="course-name">
+      <div class="container">
+        <div class="breadcrumb">
+          <a href="courses.html">Courses</a>
+          <span>›</span>
+          <span id="breadcrumb-name">Loading...</span>
+        </div>
+        <div id="course-badge-container" style="margin-bottom:12px"></div>
+        <h1 class="page-hero-title" id="course-name">Loading Course...</h1>
+        <p class="page-hero-sub" id="course-tagline"></p>
+      </div>
+    </section>
+
+    <section class="section-sm" style="background:var(--surface)">
+      <div class="container">
+        <div class="course-details-layout" id="course-details-layout">
+
+          <!-- Main Content -->
+          <div id="course-main-content">
+            <!-- Overview -->
+            <div class="card" style="padding:32px;margin-bottom:24px" id="overview-card">
+              <h2 style="font-size:1.25rem;font-weight:800;margin-bottom:16px;color:var(--text)">Course Overview</h2>
+              <p id="course-overview" style="color:var(--muted);line-height:1.8"></p>
+            </div>
+
+            <!-- What you'll learn -->
+            <div class="card" style="padding:32px;margin-bottom:24px">
+              <h2 style="font-size:1.25rem;font-weight:800;margin-bottom:20px;color:var(--text)">What Students Will Learn</h2>
+              <ul id="course-learn" style="display:grid;grid-template-columns:1fr 1fr;gap:10px;list-style:none"></ul>
+            </div>
+
+            <!-- Methodology -->
+            <div class="card" style="padding:32px;margin-bottom:24px">
+              <h2 style="font-size:1.25rem;font-weight:800;margin-bottom:16px;color:var(--text)">Learning Methodology</h2>
+              <p id="course-methodology" style="color:var(--muted);line-height:1.8"></p>
+            </div>
+
+            <!-- Roadmap -->
+            <div class="card" style="padding:32px;margin-bottom:24px">
+              <h2 style="font-size:1.25rem;font-weight:800;margin-bottom:20px;color:var(--text)">Course Roadmap</h2>
+              <div class="roadmap" id="course-roadmap"></div>
+            </div>
+
+            <!-- Who should join -->
+            <div class="card" style="padding:32px;margin-bottom:24px">
+              <h2 style="font-size:1.25rem;font-weight:800;margin-bottom:16px;color:var(--text)">Who Should Join?</h2>
+              <ul id="course-who" style="display:flex;flex-direction:column;gap:10px;list-style:none"></ul>
+            </div>
+
+            <!-- Skills developed -->
+            <div class="card" style="padding:32px;">
+              <h2 style="font-size:1.25rem;font-weight:800;margin-bottom:16px;color:var(--text)">Skills You Will Develop</h2>
+              <div id="course-skills" style="display:flex;flex-wrap:wrap;gap:8px"></div>
+            </div>
+          </div>
+
+          <!-- Sticky sidebar -->
+          <div class="course-sticky-card">
+            <div class="course-sticky-header" id="sticky-header">
+              <div style="font-size:.75rem;opacity:.8;margin-bottom:4px">Course Fee</div>
+              <div class="course-sticky-price" id="sticky-price">₹—</div>
+              <div style="font-size:.875rem;opacity:.8" id="sticky-level">Level —</div>
+            </div>
+            <div class="course-sticky-body">
+              <div class="course-meta-row"><span class="course-meta-key">Duration</span><span class="course-meta-val" id="sticky-duration">—</span></div>
+              <div class="course-meta-row"><span class="course-meta-key">Eligibility</span><span class="course-meta-val" id="sticky-class">—</span></div>
+              <div class="course-meta-row"><span class="course-meta-key">Mode</span><span class="course-meta-val">Classroom / Blended</span></div>
+              <div class="course-meta-row"><span class="course-meta-key">Certificate</span><span class="course-meta-val">Yes, on completion</span></div>
+              <div style="margin-top:20px;display:flex;flex-direction:column;gap:10px">
+                <a href="apply.html" class="btn btn-primary btn-full" id="sticky-apply">Apply Now</a>
+                <a href="scholarship.html" class="btn btn-outline btn-full">Check Scholarship</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div><img src="assets/images/TimsLogo.png" alt="TIMS Institute" class="footer-brand-logo" /><p class="footer-brand-desc">Empowering students with practical skills in technology, coding and AI.</p></div>
+        <div><h3 class="footer-heading">Quick Links</h3><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="courses.html">Courses</a></li><li><a href="scholarship.html">Scholarship</a></li><li><a href="about.html">About</a></li><li><a href="faq.html">FAQ</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+        <div><h3 class="footer-heading">Courses</h3><ul class="footer-links"><li><a href="course-details.html?course=basic">Basic Computer + AI</a></li><li><a href="course-details.html?course=intermediate">Intermediate Coding</a></li><li><a href="course-details.html?course=fullstack">Full Stack Web Developer</a></li></ul></div>
+        <div><h3 class="footer-heading">Contact</h3><div class="footer-contact-item"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Opposite Canara Bank Near Raj well Sardarshahar, churu, RJ - 331403</div><div class="footer-contact-item"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.56 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.29 6.29l.91-.91a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+919256380161</div><div class="footer-contact-item"><svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>timsinstitute1@gmail.com</div></div>
+      </div>
+      <div class="footer-bottom"><div class="footer-bottom-copy">&copy; 2026 TIMS Institute. All rights reserved.</div><div class="footer-bottom-links"><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></div></div>
+    </div>
+  </footer>
+  <button class="back-to-top" aria-label="Back to top"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></button>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+  // ── Course Data ────────────────────────────────────────────
+  const COURSES = {
+    basic: {
+      name: 'Basic Computer + AI',
+      level: 'Level 1',
+      levelClass: 'badge-green',
+      accentColor: '#22c55e',
+      price: '₹10,000',
+      duration: '4 Months',
+      eligibility: 'Class 5–7',
+      tagline: 'Start your digital journey — learn computers, AI tools, and build your first web pages.',
+      overview: 'This beginner-friendly course introduces school students (Class 5–7) to the world of computers, the internet, artificial intelligence, and basic web development. Students learn through hands-on activities, mini-projects, and guided exploration — making it fun and engaging without being overwhelming.',
+      methodology: 'Each class is a mix of theory (20%), live demonstration (30%), and hands-on practice (50%). Students work on mini-projects every month that combine what they have learned. AI tools are introduced gradually so students develop practical prompting and usage skills.',
+      learn: [
+        'How computers work (hardware & software)',
+        'Safe and responsible internet usage',
+        'What is AI and how AI tools work',
+        'Using AI for study and productivity',
+        'Basic HTML structure and tags',
+        'Basic CSS for styling web pages',
+        'Using productivity tools (Docs, Slides, Sheets)',
+        'Building a personal mini web page'
+      ],
+      who: [
+        'School students in Class 5, 6, or 7',
+        'Complete beginners with no prior coding knowledge',
+        'Students curious about AI and technology',
+        'Parents who want their child to start early'
+      ],
+      skills: ['Computer Basics', 'Internet Safety', 'AI Literacy', 'Prompting Skills', 'Basic HTML', 'Basic CSS', 'Creative Thinking', 'Digital Tools'],
+      roadmap: [
+        { month: 'Month 1', title: 'Computer & Internet Foundations', desc: 'Hardware, software, operating systems, internet safety, and digital citizenship.' },
+        { month: 'Month 2', title: 'AI Basics & Tools', desc: 'What is AI, how AI tools work, prompting skills, using AI for study and creativity.' },
+        { month: 'Month 3', title: 'Productivity & Coding Intro', desc: 'Google Workspace tools, introduction to HTML & CSS, first web page.' },
+        { month: 'Month 4', title: 'Mini-Project & Showcase', desc: 'Build a personal creative mini-project, present to peers, receive certificate.' }
+      ]
+    },
+    intermediate: {
+      name: 'Intermediate Coding',
+      level: 'Level 2',
+      levelClass: 'badge-blue',
+      accentColor: '#2563eb',
+      price: '₹15,000',
+      duration: '6 Months',
+      eligibility: 'Class 7–10',
+      tagline: 'Go beyond basics — master HTML, CSS and JavaScript to build real interactive websites.',
+      overview: 'This intermediate course is designed for students in Class 7–10 who want to go from "I know a little HTML" to "I can build a real website." Students learn how to design beautiful pages with CSS, make them interactive with JavaScript, and build projects they can actually share online.',
+      methodology: 'Project-first methodology: every concept is immediately applied in a project context. Students work on weekly challenges, bi-monthly milestone projects, and a final capstone project. Code review and peer feedback are regular parts of the curriculum.',
+      learn: [
+        'Semantic HTML5 structure',
+        'Modern CSS (Flexbox, Grid, animations)',
+        'JavaScript fundamentals and DOM',
+        'Event handling and interactivity',
+        'Responsive web design',
+        'Logic building and problem solving',
+        'Debugging and browser DevTools',
+        'Building and deploying a portfolio website'
+      ],
+      who: [
+        'Students in Class 7, 8, 9, or 10',
+        'Students who have basic computer knowledge',
+        'Students who completed Level 1 (Basic Computer + AI)',
+        'Anyone who wants to build real websites'
+      ],
+      skills: ['HTML5', 'CSS3', 'JavaScript', 'DOM Manipulation', 'Responsive Design', 'Flexbox', 'CSS Grid', 'Problem Solving', 'Debugging'],
+      roadmap: [
+        { month: 'Month 1', title: 'HTML & Semantic Structure', desc: 'Deep dive into HTML5, semantic elements, forms, and best practices.' },
+        { month: 'Month 2', title: 'CSS & Visual Design', desc: 'CSS properties, selectors, Flexbox, Grid, animations, and responsive design.' },
+        { month: 'Month 3', title: 'JavaScript Fundamentals', desc: 'Variables, data types, functions, arrays, objects, and control flow.' },
+        { month: 'Month 4', title: 'DOM & Interactivity', desc: 'DOM manipulation, events, form validation, and building interactive UI.' },
+        { month: 'Month 5', title: 'Project Development', desc: 'Build a full multi-page responsive website with JavaScript features.' },
+        { month: 'Month 6', title: 'Portfolio & Showcase', desc: 'Polish projects, create a portfolio, present work, receive certificate.' }
+      ]
+    },
+    fullstack: {
+      name: 'Full Stack Web Developer',
+      level: 'Level 3',
+      levelClass: 'badge-purple',
+      accentColor: '#8b5cf6',
+      price: '₹25,000',
+      duration: '6 Months',
+      eligibility: 'Class 11–College',
+      tagline: 'Become a complete developer — build real-world apps from frontend to backend to deployment.',
+      overview: 'This advanced course takes students from capable frontend developers to full-stack web developers who can build, manage, and deploy complete web applications. Students work with real databases, APIs, version control, and cloud deployment — the same skills used in professional software development.',
+      methodology: 'Industry-oriented, project-based learning. Students work in small teams on a real-world capstone project, following agile-inspired sprints. Code reviews, Git workflows, and deployment exercises are part of every sprint. The final project is a fully functional, deployed web application.',
+      learn: [
+        'Advanced HTML, CSS & JavaScript',
+        'Frontend development best practices',
+        'Backend development concepts',
+        'Databases (SQL / NoSQL basics)',
+        'RESTful APIs and integration',
+        'Git and GitHub for version control',
+        'Web application deployment',
+        'Real-world full-stack project'
+      ],
+      who: [
+        'Students in Class 11, 12, or College',
+        'Students who completed Level 2 or equivalent',
+        'Aspiring web developers and software engineers',
+        'Students preparing for internships or careers in tech'
+      ],
+      skills: ['HTML/CSS (Advanced)', 'JavaScript ES6+', 'Frontend Dev', 'Backend Dev', 'Databases', 'REST APIs', 'Git & GitHub', 'Deployment', 'Team Collaboration'],
+      roadmap: [
+        { month: 'Month 1', title: 'Advanced Frontend', desc: 'Modern HTML/CSS, advanced JavaScript (ES6+), component-based thinking.' },
+        { month: 'Month 2', title: 'JavaScript & Logic Deep Dive', desc: 'Async JS, Promises, fetch API, error handling, and data structures.' },
+        { month: 'Month 3', title: 'Backend Foundations', desc: 'Server concepts, backend language basics, routing, and request handling.' },
+        { month: 'Month 4', title: 'Databases & APIs', desc: 'Database design, CRUD operations, RESTful API design and integration.' },
+        { month: 'Month 5', title: 'Git, GitHub & Deployment', desc: 'Version control workflow, collaboration, cloud hosting, and CI basics.' },
+        { month: 'Month 6', title: 'Capstone Project & Demo', desc: 'Build and deploy a real-world full-stack application. Present to peers.' }
+      ]
+    }
+  };
+
+  // ── Render ─────────────────────────────────────────────────
+  function renderCourse() {
+    const params = new URLSearchParams(window.location.search);
+    const key = params.get('course') || 'basic';
+    const course = COURSES[key] || COURSES.basic;
+
+    // Meta
+    document.title = `${course.name} — Coding Kids by TIMS Institute`;
+    document.getElementById('page-title').textContent = `${course.name} — Coding Kids`;
+
+    // Breadcrumb
+    document.getElementById('breadcrumb-name').textContent = course.name;
+
+    // Badge
+    document.getElementById('course-badge-container').innerHTML =
+      `<span class="badge ${course.levelClass}" style="font-size:.8rem;padding:5px 14px">${course.level}</span>`;
+
+    // Hero
+    document.getElementById('course-name').textContent = course.name;
+    document.getElementById('course-tagline').textContent = course.tagline;
+
+    // Hero bg color accent
+    const hero = document.getElementById('course-hero');
+    hero.style.borderBottom = `4px solid ${course.accentColor}`;
+
+    // Sidebar
+    document.getElementById('sticky-price').textContent = course.price;
+    document.getElementById('sticky-level').textContent = `${course.level} — Coding Kids`;
+    document.getElementById('sticky-duration').textContent = course.duration;
+    document.getElementById('sticky-class').textContent = course.eligibility;
+    document.getElementById('sticky-apply').href = `apply.html?course=${key}`;
+
+    // Sticky header accent
+    document.getElementById('sticky-header').style.background =
+      `linear-gradient(135deg, ${course.accentColor}, ${course.accentColor}cc)`;
+
+    // Overview
+    document.getElementById('course-overview').textContent = course.overview;
+
+    // Methodology
+    document.getElementById('course-methodology').textContent = course.methodology;
+
+    // What you'll learn
+    const learnEl = document.getElementById('course-learn');
+    learnEl.innerHTML = course.learn.map(item => `
+      <li style="display:flex;align-items:flex-start;gap:8px;font-size:.875rem;color:var(--text-secondary)">
+        <svg width="16" height="16" fill="none" stroke="var(--green)" stroke-width="2.5" viewBox="0 0 24 24" style="flex-shrink:0;margin-top:2px"><polyline points="20 6 9 17 4 12"/></svg>
+        ${item}
+      </li>`).join('');
+
+    // Who should join
+    const whoEl = document.getElementById('course-who');
+    whoEl.innerHTML = course.who.map(item => `
+      <li style="display:flex;align-items:center;gap:10px;padding:10px 16px;background:var(--surface);border-radius:var(--radius-md);font-size:.875rem;color:var(--text-secondary)">
+        <svg width="16" height="16" fill="none" stroke="${course.accentColor}" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+        ${item}
+      </li>`).join('');
+
+    // Skills
+    const skillsEl = document.getElementById('course-skills');
+    skillsEl.innerHTML = course.skills.map(s => `
+      <span style="padding:6px 14px;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-full);font-size:.8rem;font-weight:600;color:var(--text-secondary)">${s}</span>`).join('');
+
+    // Roadmap
+    const roadmapEl = document.getElementById('course-roadmap');
+    roadmapEl.innerHTML = course.roadmap.map(item => `
+      <div class="roadmap-item">
+        <div class="roadmap-month">${item.month}</div>
+        <div class="roadmap-title">${item.title}</div>
+        <div class="roadmap-desc">${item.desc}</div>
+      </div>`).join('');
+  }
+
+  document.addEventListener('DOMContentLoaded', renderCourse);
+  </script>
+</body>
+</html>
